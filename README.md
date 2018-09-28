@@ -1,5 +1,6 @@
 ## AssetSQLiteOpenHelper
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![](https://jitpack.io/v/hismethod/AssetSQLiteOpenHelper.svg)](https://jitpack.io/#hismethod/AssetSQLiteOpenHelper)
 
 This module supports migrating SQLite to Room Persistence Library, loads pre-populated SQLite database base on [daolq3012/AssetSQLiteOpenHelper](https://github.com/hismethod/AssetSQLiteOpenHelper)
 
