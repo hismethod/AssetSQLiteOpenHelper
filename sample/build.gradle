@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 28
     defaultConfig {
-        applicationId "com.fstyle.assetsqliteopenhelper"
+        applicationId "xyz.hismethod.assetsqliteopenhelper"
         minSdkVersion 14
-        targetSdkVersion 26
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -20,8 +20,8 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:appcompat-v7:26.1.0'
-    implementation 'android.arch.persistence.room:rxjava2:1.0.0'
-    annotationProcessor "android.arch.persistence.room:compiler:1.0.0"
-    implementation 'com.github.daolq3012:AssetSQLiteOpenHelper:1.0'
+    implementation project(':library')
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.room:room-rxjava2:2.0.0-rc01'
+    annotationProcessor "androidx.room:room-compiler:2.0.0-rc01"
 }

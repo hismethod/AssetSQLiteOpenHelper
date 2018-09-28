@@ -1,11 +1,11 @@
-package com.fstyle.assetsqliteopenhelper.database;
+package xyz.hismethod.assetsqliteopenhelper.database;
 
-import android.arch.persistence.room.Database;
-import android.arch.persistence.room.Room;
-import android.arch.persistence.room.RoomDatabase;
+import androidx.room.Database;
+import androidx.room.Room;
+import androidx.room.RoomDatabase;
 import android.content.Context;
-import com.fstyle.assetsqliteopenhelper.database.dao.TestDao;
-import com.fstyle.assetsqliteopenhelper.database.entity.TestEntity;
+import xyz.hismethod.assetsqliteopenhelper.database.dao.TestDao;
+import xyz.hismethod.assetsqliteopenhelper.database.entity.TestEntity;
 import com.fstyle.library.helper.AssetSQLiteOpenHelperFactory;
 
 /**

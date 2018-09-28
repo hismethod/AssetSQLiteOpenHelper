@@ -1,7 +1,7 @@
-package com.fstyle.assetsqliteopenhelper;
+package xyz.hismethod.assetsqliteopenhelper;
 
 import android.app.Application;
-import com.fstyle.assetsqliteopenhelper.database.TestDatabase;
+import xyz.hismethod.assetsqliteopenhelper.database.TestDatabase;
 
 /**
  * Created by daolq on 11/15/17.

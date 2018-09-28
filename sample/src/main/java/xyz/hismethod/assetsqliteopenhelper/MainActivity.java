@@ -1,9 +1,12 @@
-package com.fstyle.assetsqliteopenhelper;
+package xyz.hismethod.assetsqliteopenhelper;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import com.fstyle.assetsqliteopenhelper.database.entity.TestEntity;
+
+import com.fstyle.assetsqliteopenhelper.R;
+
+import xyz.hismethod.assetsqliteopenhelper.database.entity.TestEntity;
 import io.reactivex.functions.Consumer;
 import java.util.List;
 
