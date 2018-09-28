@@ -1,7 +1,7 @@
 ## AssetSQLiteOpenHelper
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-This module supports migrating SQLite to Room Persistence Library, loads pre-populated SQLite database base on [daolq3012/AssetSQLiteOpenHelper](https://github.com/daolq3012/AssetSQLiteOpenHelper)
+This module supports migrating SQLite to Room Persistence Library, loads pre-populated SQLite database base on [daolq3012/AssetSQLiteOpenHelper](https://github.com/hismethod/AssetSQLiteOpenHelper)
 
 ### How to config:
 
@@ -19,11 +19,10 @@ allprojects {
 Step 2. Add the dependency
 ```gradle
 dependencies {
-    implementation 'com.github.daolq3012:AssetSQLiteOpenHelper:1.0'
+    implementation 'com.github.hismethod:AssetSQLiteOpenHelper:1.0'
     // Because AssetSQLiteOpenHelper releases are few and far between (persistence room version using in module is 1.0.0),
     // it is recommended you also explicitly depend on Persistence Room's latest version for bug fixes and new features.
     implementation 'androidx.room:room-runtime:x.x.x'
-'
 }
 ```
 
