@@ -1,7 +1,7 @@
 ## AssetSQLiteOpenHelper
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-This module supports migrating SQLite to Room Persistence Library, loads pre-populated SQLite database base on [albertogiunta/sqliteAsset](https://github.com/albertogiunta/sqliteAsset)
+This module supports migrating SQLite to Room Persistence Library, loads pre-populated SQLite database base on [daolq3012/AssetSQLiteOpenHelper](https://github.com/daolq3012/AssetSQLiteOpenHelper)
 
 ### How to config:
 
@@ -22,7 +22,8 @@ dependencies {
     implementation 'com.github.daolq3012:AssetSQLiteOpenHelper:1.0'
     // Because AssetSQLiteOpenHelper releases are few and far between (persistence room version using in module is 1.0.0),
     // it is recommended you also explicitly depend on Persistence Room's latest version for bug fixes and new features.
-    implementation 'android.arch.persistence.room:runtime:x.x.x'
+    implementation 'androidx.room:room-runtime:x.x.x'
+'
 }
 ```
 
@@ -45,7 +46,7 @@ The Example are built using [Android studio](https://developer.android.com/studi
 - Open pull request with improvements
 - Discuss ideas in issues
 - Spread the word
-- Reach out to me directly at dao.le.2511@gmail.com
+- Reach out to me directly at his.methods@gmail.com
 
 ## License
 
