@@ -1,7 +1,8 @@
-package com.fstyle.library.helper;
+package xyz.hismethod.library.helper;
 
-import android.arch.persistence.db.SupportSQLiteProgram;
 import android.database.sqlite.SQLiteProgram;
+
+import androidx.sqlite.db.SupportSQLiteProgram;
 
 /**
  * An wrapper around {@link SQLiteProgram} to implement {@link SupportSQLiteProgram} API.
@@ -44,7 +45,7 @@ class FrameworkSQLiteProgram implements SupportSQLiteProgram {
     }
 
     @Override
-    public void close() throws Exception {
+    public void close() {
         mDelegate.close();
     }
 }

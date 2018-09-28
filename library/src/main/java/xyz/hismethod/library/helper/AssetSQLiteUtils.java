@@ -1,4 +1,4 @@
-package com.fstyle.library.helper;
+package xyz.hismethod.library.helper;
 
 import android.util.Log;
 import java.io.IOException;

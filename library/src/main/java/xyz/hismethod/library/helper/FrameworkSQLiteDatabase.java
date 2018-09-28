@@ -1,4 +1,4 @@
-package com.fstyle.library.helper;
+package xyz.hismethod.library.helper;
 /*
  * Copyright (C) 2016 The Android Open Source Project
  *
@@ -15,10 +15,7 @@ package com.fstyle.library.helper;
  * limitations under the License.
  */
 
-import android.arch.persistence.db.SimpleSQLiteQuery;
-import android.arch.persistence.db.SupportSQLiteDatabase;
-import android.arch.persistence.db.SupportSQLiteQuery;
-import android.arch.persistence.db.SupportSQLiteStatement;
+
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.SQLException;
@@ -29,11 +26,17 @@ import android.database.sqlite.SQLiteQuery;
 import android.database.sqlite.SQLiteTransactionListener;
 import android.os.Build;
 import android.os.CancellationSignal;
-import android.support.annotation.RequiresApi;
 import android.util.Pair;
+
 import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
+
+import androidx.annotation.RequiresApi;
+import androidx.sqlite.db.SimpleSQLiteQuery;
+import androidx.sqlite.db.SupportSQLiteDatabase;
+import androidx.sqlite.db.SupportSQLiteQuery;
+import androidx.sqlite.db.SupportSQLiteStatement;
 
 /**
  * Delegates all calls to an implementation of {@link SQLiteDatabase}.
@@ -157,7 +160,7 @@ class FrameworkSQLiteDatabase implements SupportSQLiteDatabase {
         return mDelegate.rawQueryWithFactory(new SQLiteDatabase.CursorFactory() {
             @Override
             public Cursor newCursor(SQLiteDatabase sqLiteDatabase,
-                    SQLiteCursorDriver sqLiteCursorDriver, String s, SQLiteQuery sqLiteQuery) {
+                                    SQLiteCursorDriver sqLiteCursorDriver, String s, SQLiteQuery sqLiteQuery) {
                 supportQuery.bindTo(new FrameworkSQLiteProgram(sqLiteQuery));
                 return new SQLiteCursor(sqLiteCursorDriver,s,sqLiteQuery);
             }

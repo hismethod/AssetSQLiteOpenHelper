@@ -1,4 +1,4 @@
-package com.fstyle.library.helper;
+package xyz.hismethod.library.helper;
 /*
  * Copyright (C) 2016 The Android Open Source Project
  *
@@ -15,8 +15,9 @@ package com.fstyle.library.helper;
  * limitations under the License.
  */
 
-import android.arch.persistence.db.SupportSQLiteStatement;
 import android.database.sqlite.SQLiteStatement;
+
+import androidx.sqlite.db.SupportSQLiteStatement;
 
 /**
  * Delegates all calls to a {@link SQLiteStatement}.
@@ -90,7 +91,7 @@ class FrameworkSQLiteStatement implements SupportSQLiteStatement {
     }
 
     @Override
-    public void close() throws Exception {
+    public void close() {
         mDelegate.close();
     }
 }

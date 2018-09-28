@@ -1,8 +1,10 @@
-package com.fstyle.library.helper;
+package xyz.hismethod.library.helper;
 
-import android.arch.persistence.db.SupportSQLiteOpenHelper;
+
 import android.database.DatabaseErrorHandler;
 import android.database.sqlite.SQLiteDatabase;
+
+import androidx.sqlite.db.SupportSQLiteOpenHelper;
 
 /**
  * Created by daolq on 11/14/17.
