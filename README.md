@@ -21,8 +21,6 @@ Step 2. Add the dependency
 ```gradle
 dependencies {
     implementation 'com.github.hismethod:AssetSQLiteOpenHelper:1.0.1'
-    // Because AssetSQLiteOpenHelper releases are few and far between (persistence room version using in module is 1.0.0),
-    // it is recommended you also explicitly depend on Persistence Room's latest version for bug fixes and new features.
     implementation 'androidx.room:room-runtime:x.x.x'
 }
 ```
